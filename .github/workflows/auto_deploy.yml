@@ -31,6 +31,6 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Installing surge
-        run: npm istall --global surge
+        run: npm install --global surge
       - name: deploy using surge
         run: surge ./ unequal-current.surge.sh --token ${{secrets.TOKEN}}
